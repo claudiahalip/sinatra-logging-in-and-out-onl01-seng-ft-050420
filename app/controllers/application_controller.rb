@@ -24,6 +24,7 @@ class ApplicationController < Sinatra::Base
     
 
   get '/account' do
+    @cur
     if 
       erb:error
     else
