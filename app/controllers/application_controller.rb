@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
     
 
   get '/account' do
-    @cur
+    @curent_user=User.find_by()
     if 
       erb:error
     else
