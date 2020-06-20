@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     @curent_user=User.find_by_id(:user_id)
-    if @curent_user != nil && @curent_user[:password]==
+    if @curent_user != nil && @curent_user[:password]==params[:password]
       erb :account
     else
       erb:error
